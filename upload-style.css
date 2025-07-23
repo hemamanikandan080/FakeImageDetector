@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('images/FRONTENDNEON.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #111;
+}
+
+.upload-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #000;
+}
+
+h1 span {
+  color: orange;
+}
+
+.upload-area {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.drop-zone {
+  width: 400px;
+  height: 300px;
+  border: 2px dashed orange;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.drop-zone p {
+  margin-top: 10px;
+  color: #333;
+}
+
+.preview-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ .preview-area img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+
+.preview-area button {
+  padding: 10px 20px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.preview-area button:hover {
+  background-color: darkorange;
+}

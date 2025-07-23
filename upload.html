@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Image</title>
+  <link rel="stylesheet" href="upload-style.css" />
+</head>
+<body>
+  <div class="upload-container">
+    <h1>Upload a <span>photo</span></h1>
+
+    <div class="upload-area">
+      <div class="drop-zone" id="drop-zone">
+        <input type="file" id="file-input" accept="image/*" hidden />
+        <div class="icon" onclick="document.getElementById('file-input').click();">
+          ⬆️
+        </div>
+        <p>Drag and drop some files here, or click to select files</p>
+      </div>
+
+      <div class="preview-area">
+        <img id="preview" src="https://via.placeholder.com/150" alt="Image Preview" />
+        <button onclick="detectImage()">Detect</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="upload-script.js"></script>
+</body>
+</html>
